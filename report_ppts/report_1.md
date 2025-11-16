@@ -38,15 +38,29 @@ Paper Link: [A Two Stage Prediction + Detection Framework for Real-Time Epilepti
 
 ### Abstract
 
-- Proposes a Two-Stage PDNet framework
-- Consists of lightweight seizure predictor and a highly accurate seizure detector
-- First Stage: Seizure Predictor forecasts an impending seizure
-- Second Stage: Seizure Detector is activated to precisely and rapidly classify the seizure states, thereby reducing the amount of computations.
-- Semi-Supervised Learning strategy is employed to enhance the decision bounday of the seizure predictor, which is used for electroencephalogram (EEG) preprocessing instead of prediction only.
-- PDNet is evaluated on CHB-MIT scalp EEG database.
-- Achieves 99% sensitivity, 0.43/h FAR (false alarm rate), 3.52s detection latency with 3.02 M multiply-accumulate (MAC) operations.
-- Outputs a fine-grained information such as occurance process of seizures is demonstrated by soft labels.
+\- Proposes a Two-Stage PDNet framework
 
+\- Consists of lightweight seizure predictor and a highly accurate seizure detector
+
+\- First Stage: Seizure Predictor forecasts an impending seizure
+
+\- Second Stage: Seizure Detector is activated to precisely and rapidly classify the seizure states, thereby reducing the amount of computations.
+
+\- Semi-Supervised Learning strategy is employed to enhance the decision bounday of the seizure predictor, which is used for electroencephalogram (EEG) preprocessing instead of prediction only.
+
+\- PDNet is evaluated on CHB-MIT scalp EEG database.
+
+\- Achieves 99% sensitivity, 0.43/h FAR (false alarm rate), 3.52s detection latency with 3.02 M multiply-accumulate (MAC) operations.
+
+\- Outputs a fine-grained information such as occurance process of seizures is demonstrated by soft labels.
+
+
+<!-- end_slide -->
+
+Important Links:
+===
+
+[Brain Decode](https://braindecode.org/stable/models/models_table.html)
 
 <!-- end_slide -->
 
@@ -56,7 +70,9 @@ Introduction
 ### About Epilepsy
 
 - EPILEPSY is one of the most common neurological disorders, which is characterized by transient abnormal disturbance in brain neurons. 
+
 - Epilepsy seizures affect approx 1% of human beings worldwide. 
+
 - It's an unpredictable chronic disease and can lead to unconciousness at any time.
 
 More about Epilepsy: [Epilepsy: New Advances](https://www.sciencedirect.com/science/article/pii/S0140673614604566?via%3Dihub) 
@@ -205,8 +221,11 @@ B. Consistency-Based Semi-Supervised Seizure Prediction Model
 ### [Consistency Regularization](https://arxiv.org/abs/1910.13188)
 
 - Discriminative features can be learned from unlabeled data. 
+
 - The inputs of models are pertubed by stochastic augmentation in each epoch.
+
 - Consistency Regularization allows the model to maintain consistent results for similar samples with minor variations.
+
 -  Decision boundary is pushed to the low-density regions of the feature space as similar samples gather.
 
 ### [Temporal Ensembling for Semi-Supervised Learning](https://arxiv.org/abs/1610.02242)
@@ -219,9 +238,16 @@ B. Consistency-Based Semi-Supervised Seizure Prediction Model
 
 ## Technicalities : 
 
-\- Adopted Temporal Ensembling method as consistency regularization to further improve the decision boundary and enhance the tolerance to 'incorrect labels' between the preictal and interictal states.
+\- Adopted `Temporal Ensembling` method as consistency regularization to further improve the decision boundary and enhance the tolerance to 'incorrect labels' between the preictal and interictal states.
 
 \- Interictal period is defined as between atleast 2 hr before seizure onset and 2 hr after seizure end.
 
 \- 
+
+
+
+
+
+
+
 
